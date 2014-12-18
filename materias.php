@@ -39,8 +39,8 @@ require_once 'includes/funciones.php';
                     INNER JOIN `materia_docente` 
                         ON (`docente`.`id` = `materia_docente`.`id_docente`)
                     RIGHT JOIN `materia` 
-                        ON (`materia`.`id` = `materia_docente`.`id_materia`)
-                WHERE (`materia`.`idcurricula` ='$curricula')";
+                        ON (`materia`.`id` = `materia_docente`.id_materia) 
+                WHERE (`materia`.`idcurricula` ='$curricula' )";
         
         $conex = conectar();
 

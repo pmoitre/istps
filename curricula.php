@@ -19,10 +19,11 @@ require_once 'includes/funciones.php';
             </ul>
         </div>
         <?php
-        echo '<div align="left"><div align="left" class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">Nuevo</button>
+        echo '<form method="post" action="curricula_vista.php"><div align="left">
+            <div align="left" class="btn-group" role="group" aria-label="...">
+            <button type="submit" class="btn btn-default">Nuevo</button>
             
-          </div></div>';
+          </div></div></form>';
         $sql = "SELECT
                     `curricula`.`id`
                     , `curricula`.`nombre`
